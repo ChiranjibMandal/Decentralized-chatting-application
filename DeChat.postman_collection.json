@@ -1,0 +1,133 @@
+{
+	"info": {
+		"_postman_id": "8cf53e75-c46b-4008-9b21-4cd7db4974c5",
+		"name": "DeChat",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Sign Up",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"signup"
+					]
+				}
+			},
+			"response": [
+				{
+					"transactionHash": "0x940f229af4c26cd56c7bb3a73061df9f7ad791a7a7607c97e4f18c1aa8569c80",
+					"transactionIndex": 0,
+					"blockHash": "0xa9175ac666900e71af2bbed02d9d65d973bdf75b13c04521b489340d9cb9700b",
+					"blockNumber": 22,
+					"from": "0xd93163069b4e898744f5a37b49ad1d2d77a79fe6",
+					"to": "0xaf0eb889598ce75d1915b08855582104ad3fed45",
+					"gasUsed": 47259,
+					"cumulativeGasUsed": 47259,
+					"contractAddress": null,
+					"status": true,
+					"logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+					"v": "0x1b",
+					"r": "0xbe837d8511f2a223ed9fd27f2f7c754795fb0810246ea1dfc92e195bcafb25a5",
+					"s": "0x4b6048e50ed95dc70fa981d7f6e93dbfd62b0701592990d4761359f5cae381e0",
+					"events": {}
+				}
+			]
+		},
+		{
+			"name": "Send Message",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/sendMsg",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"sendMsg"
+					]
+				}
+			},
+			"response": [
+				{
+					"transactionHash": "0xf976fc80d2e536b5fa0608bd3595ffd3f87a1b95da1a1be4c38d660b3c950e3c",
+					"transactionIndex": 0,
+					"blockHash": "0xda8ff1d58499330f3e4674d068550ab04a9bbb7be418b1eb00fd72fef797ffe2",
+					"blockNumber": 23,
+					"from": "0x17a474f66ccb7b34b723e04156ce6b4512c36562",
+					"to": "0xaf0eb889598ce75d1915b08855582104ad3fed45",
+					"gasUsed": 257555,
+					"cumulativeGasUsed": 257555,
+					"contractAddress": null,
+					"status": true,
+					"logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+					"v": "0x1b",
+					"r": "0xb137b09b09b14822ddc6fcba5e15548261e5465ec1b98e5d2539feebe8d284cd",
+					"s": "0x4a1662c269a98b18d6fb93e01ff104a70adb33badd4c983a68656240c9f36268",
+					"events": {}
+				}
+			]
+		},
+		{
+			"name": "Check Inbox Message",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/checkMsg",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"checkMsg"
+					]
+				}
+			},
+			"response": [
+				[
+					[
+						"0x17a474F66CCB7b34B723E04156cE6B4512c36562",
+						"Digha"
+					],
+					[
+						"0x17a474F66CCB7b34B723E04156cE6B4512c36562",
+						"Digha"
+					],
+					[
+						"0x17a474F66CCB7b34B723E04156cE6B4512c36562",
+						"Digha"
+					],
+					[
+						"0x17a474F66CCB7b34B723E04156cE6B4512c36562",
+						"Digha"
+					],
+					[
+						"0xD93163069B4E898744f5A37B49ad1d2d77a79FE6",
+						"Ankit"
+					],
+					[
+						"0x17a474F66CCB7b34B723E04156cE6B4512c36562",
+						"Digha"
+					],
+					[
+						"0x17a474F66CCB7b34B723E04156cE6B4512c36562",
+						"Digha"
+					]
+				]
+			]
+		}
+	]
+}
